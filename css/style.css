@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #555;
+}
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+  position: relative;
+}
+/*link social media
+*/
+#mySidenav a {
+  position: absolute; 
+  right: -100px; 
+  transition: 0.3s; 
+  padding: 15px; 
+  width: 100px; 
+  text-decoration: none; 
+  font-size: 20px; 
+  color: white; 
+  border-radius: 5px 0 0 5px;
+  text-align: right; 
+}
+
+#mySidenav a:hover {
+  right: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#facebook {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#youtube {
+  top: 80px;
+  background-color: #2196F3; /* Blue */
+}
+
+#twitter {
+  top: 140px;
+  background-color: #f44336; /* Red */
+}
+
+#linkedin {
+  top: 200px;
+  background-color: #555 /* Light Black */
+}
