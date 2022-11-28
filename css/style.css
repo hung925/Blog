@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background: #555;
+  position: relative;
 }
 .content {
   max-width: 500px;
@@ -9,12 +19,97 @@ body {
   background: white;
   padding: 10px;
   position: relative;
+  width: 100%;
 }
+
+/*Navigation bar*/
+.Nav_list {
+  /*
+  text-size-adjust: 100%;
+  overflow-wrap: break-word;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.9);
+  color-scheme: dark;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  line-height: 30px;
+  margin-top: 0px;
+ /* position: relative;
+  padding-left: 10%;*//*
+  overflow-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  width: auto;
+  -webkit-box-align: center;
+  -webkit-box-flex: 1;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+*/
+box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.9);
+    color-scheme: auto;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    line-height: 30px;
+    margin-top: 0px;
+    overflow-wrap: break-word;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    width: auto;
+    -webkit-box-align: center;
+    -webkit-box-flex: 1;
+    -webkit-font-smoothing: antialiased;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+
+.hung {
+  align-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.works {
+  box-sizing: border-box;
+  line-height: 30px;
+  text-decoration-color: rgba(255, 255, 255, 0.92 );
+  text-decoration-line: none;
+ 
+}
+
+.project {
+  box-sizing: border-box;
+  line-height: 30px;
+  text-decoration-color: rgba(255, 255, 255, 0.92 );
+  text-decoration-line: none;
+  
+}
+.user {
+  box-sizing: border-box;
+  line-height: 30px;
+  text-decoration-color: rgba(255, 255, 255, 0.92 );
+  text-decoration-line: none;
+}
+
+.github {
+  box-sizing: border-box;
+  line-height: 30px;
+  text-decoration-color: rgba(255, 255, 255, 0.92 );
+  text-decoration-line: none;
+  
+}
+
 /*link social media
 */
 #mySidenav a {
   position: absolute; 
-  right: -100px; 
+  right: -90px; 
   transition: 0.3s; 
   padding: 15px; 
   width: 100px; 
@@ -26,10 +121,9 @@ body {
 }
 
 #mySidenav a:hover {
-  right: 0; /* On mouse-over, make the elements appear as they should */
+  right: 0; 
 }
 
-/* The about link: 20px from the top with a green background */
 #facebook {
   top: 20px;
   background-color: #04AA6D;
@@ -48,4 +142,59 @@ body {
 #linkedin {
   top: 200px;
   background-color: #555 /* Light Black */
+}
+
+
+/*dark theme*/
+
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: #28096b;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: .5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #fff000;
+  background: var(--background);
+  transition: .5s;
+}
+
+input:checked + .slider {
+  background-color: #522ba7;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #fff000;
 }
